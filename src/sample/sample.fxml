@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.web.*?>
+
+<TabPane fx:id="tabpane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller">
+  <tabs>
+    <Tab fx:id="tabs" text="Браузер">
+      <content>
+        <AnchorPane fx:id="anchorpane" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: #696969;">
+               <children>
+                  <WebView fx:id="webview" cache="true" focusTraversable="false" fontScale="1.0" layoutY="30.0" prefHeight="180.0" prefWidth="1289.0" AnchorPane.bottomAnchor="25.0" AnchorPane.topAnchor="30.0" />
+                  <ProgressBar fx:id="progress" layoutX="7.0" layoutY="678.0" prefWidth="200.0" progress="0.0" AnchorPane.topAnchor="678.0" />
+                  <Button fx:id="prewpage" layoutX="1.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="61.0" text="Назад" AnchorPane.bottomAnchor="675.0" AnchorPane.topAnchor="0.0" />
+                  <Button fx:id="nextpage" layoutX="69.0" layoutY="1.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="98.0" text="Следующая" AnchorPane.bottomAnchor="675.0" AnchorPane.topAnchor="0.0" />
+                  <Button fx:id="search" layoutX="1123.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="70.0" text="Поиск" AnchorPane.bottomAnchor="675.0" AnchorPane.rightAnchor="99.0" AnchorPane.topAnchor="0.0" />
+                  <Button fx:id="reload" layoutX="175.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="101.0" text="Перезагрузить" AnchorPane.bottomAnchor="675.0" AnchorPane.topAnchor="0.0" />
+                  <Button fx:id="home" layoutX="285.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="79.0" text="Главная" AnchorPane.bottomAnchor="675.0" AnchorPane.topAnchor="0.0" />
+                  <TextField fx:id="Textsearch" layoutX="380.0" prefHeight="27.0" prefWidth="694.0" AnchorPane.bottomAnchor="675.0" AnchorPane.topAnchor="0.0" />
+                  <Button fx:id="delete" layoutX="1087.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="28.0" text="X" AnchorPane.bottomAnchor="675.0" AnchorPane.topAnchor="0.0" />
+               </children></AnchorPane>
+      </content>
+    </Tab>
+  </tabs>
+</TabPane>
