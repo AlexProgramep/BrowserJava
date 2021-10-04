@@ -85,11 +85,11 @@ public class Controller {
                                public void handle(ActionEvent event) {
                                    String url = Textsearch.getText();
                                    boolean urlhttp = url.startsWith("http");
-                                   boolean gwidget = url.endsWith("google-widget");
+                                   boolean gwvignette = url.endsWith("google_vignette");
                                    if (urlhttp) {
                                        webEngine.load(url);
 
-                                   }else if (gwidget){
+                                   }else if (gvignette){
                                        webEngine.executeScript("history.go(-1);");
                                    } else {
                                    webEngine.load("https://www.google.com/search?q=" + url);
